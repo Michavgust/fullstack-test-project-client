@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  block-size: border-box;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  width: 387px;
+  height: 223px;
+  top: 211px;
+  left: 527px;
+  margin: 20px auto;
+  bottom: 2px solid #eee;
+  border-radius: 5px;
+  padding: 12px;
+}
+.form .form-header .h2 {
+  width: 166px;
+  height: 19px;
+  top: 12px;
+  left: 12px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(68, 68, 68);
+}
+.form .user-data .block-name .name {
+  width: 363px;
+  height: Hug(34px);
+  top: 63px;
+  left: 12px;
+  padding: 10px 12px 10px 12px;
+  gap: 8px;
+  border-radius: 5px;
+  border: 1px;
+  opacity: 0px;
+  border: 1px solid rgb(248, 116, 116);
+}
+.form .user-data .block-name .name-error {
+  width: 363px;
+  height: 10px;
+  font-family: Inter;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 9.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(228, 75, 75);
+}
+.form .user-data .phone {
+  width: 363px;
+  height: Hug(34px);
+  top: 121px;
+  left: 12px;
+  padding: 10px 12px 10px 12px;
+  gap: 8px;
+  border-radius: 5px;
+  border: 1px;
+  opacity: 0px;
+  border: 1px solid rgb(230, 230, 230);
+}
+.form .form-footer {
+  width: 100%;
+  height: 32px;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.form .form-footer label {
+  display: inline-flex;
+  font-family: Inter;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 9.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(68, 68, 68);
+}
+.form .form-footer label .personal_data {
+  width: 8px;
+  height: 8px;
+  margin-right: 4px;
+  border-radius: 2px;
+  opacity: 0px;
+  border-color: 1px solid rgb(209, 209, 209);
+}
+.form .form-footer .submit {
+  width: Hug(106px);
+  height: Hug(32px);
+  padding: 6px 20px 6px 20px;
+  gap: 30px;
+  border-radius: 5px;
+  border-color: rgb(24, 197, 118);
+  opacity: 0px;
+  background: rgb(24, 197, 118);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(254, 254, 254);
+}
+
+/*# sourceMappingURL=style.css.map */
