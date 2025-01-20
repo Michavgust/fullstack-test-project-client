@@ -12,15 +12,19 @@
         <form class="form" action="form.html" method="post">
             <div class="form-header">
                 <h2>Оставьте заявку</h2>
+                <img src="/client/icons/x.png" alt="">
             </div>
             
             <div class="user-data">
                 <div class="block-name">
-                    <input class="name" type="text" name="name">
-                    <span class="name-error">Поле не заполнено</span>
+                    <input class="name" type="text" name="name" placeholder="Ваше имя *" required>
+                    <span class="empty-error-name">Поле не заполнено</span>
                 </div>
                 
-                <input class="phone" type="text" name="phone">
+                <div class="block-phone">
+                    <input class="phone" type="text" name="phone" placeholder="Номер телефона *" required>
+                    <span class="empty-error-phone">Поле не заполнено</span>
+                </div>
             </div>
             
             <div class="form-footer">
@@ -32,5 +36,6 @@
             </div>
             
         </form>
+        <script src="/client/script/form.js" defer></script>
     </body>
 </html>

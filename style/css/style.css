@@ -26,7 +26,12 @@ body {
   border-radius: 5px;
   padding: 12px;
 }
-.form .form-header .h2 {
+.form .form-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.form .form-header h2 {
   width: 166px;
   height: 19px;
   top: 12px;
@@ -40,6 +45,19 @@ body {
   text-decoration-skip-ink: none;
   color: rgb(68, 68, 68);
 }
+.form .form-header img {
+  width: 20px;
+  height: 20px;
+}
+.form .user-data {
+  position: relative;
+  margin-top: 31px;
+  display: grid;
+  align-content: space-between;
+}
+.form .user-data .block-name {
+  display: grid;
+}
 .form .user-data .block-name .name {
   width: 363px;
   height: Hug(34px);
@@ -50,11 +68,15 @@ body {
   border-radius: 5px;
   border: 1px;
   opacity: 0px;
-  border: 1px solid rgb(248, 116, 116);
+  border: 1px solid rgb(230, 230, 230);
 }
-.form .user-data .block-name .name-error {
+.form .user-data .block-name .empty-error-name {
+  position: relative;
   width: 363px;
   height: 10px;
+  left: 12px;
+  margin-top: 2px;
+  margin-bottom: 12px;
   font-family: Inter;
   font-size: 8px;
   font-weight: 500;
@@ -63,8 +85,12 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: rgb(228, 75, 75);
+  visibility: hidden;
 }
-.form .user-data .phone {
+.form .user-data .block-phone {
+  display: grid;
+}
+.form .user-data .block-phone .phone {
   width: 363px;
   height: Hug(34px);
   top: 121px;
@@ -75,6 +101,23 @@ body {
   border: 1px;
   opacity: 0px;
   border: 1px solid rgb(230, 230, 230);
+}
+.form .user-data .block-phone .empty-error-phone {
+  position: relative;
+  width: 363px;
+  height: 10px;
+  left: 12px;
+  margin-top: 2px;
+  margin-bottom: 12px;
+  font-family: Inter;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 9.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(228, 75, 75);
+  visibility: hidden;
 }
 .form .form-footer {
   width: 100%;
@@ -109,9 +152,10 @@ body {
   padding: 6px 20px 6px 20px;
   gap: 30px;
   border-radius: 5px;
-  border-color: rgb(24, 197, 118);
+  border-color: rgba(24, 197, 118, 0.5);
+  border-width: 0;
   opacity: 0px;
-  background: rgb(24, 197, 118);
+  background: rgba(24, 197, 118, 0.5);
   font-family: Inter;
   font-size: 12px;
   font-weight: 700;
@@ -120,6 +164,9 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: rgb(254, 254, 254);
+}
+.form .form-footer .submit:active, .form .form-footer .submit:focus, .form .form-footer .submit:hover {
+  background-color: rgba(24, 197, 118, 0.75);
 }
 
 /*# sourceMappingURL=style.css.map */
