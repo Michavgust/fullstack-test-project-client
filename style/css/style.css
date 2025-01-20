@@ -45,9 +45,33 @@ body {
   text-decoration-skip-ink: none;
   color: rgb(68, 68, 68);
 }
-.form .form-header img {
+.form .form-header .close-icon {
+  position: relative;
   width: 20px;
   height: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.form .form-header .close-icon::before, .form .form-header .close-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+}
+.form .form-header .close-icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.form .form-header .close-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.form .form-header .close-icon:hover {
+  transform: scale(1.05);
+}
+.form .form-header .close-icon:active {
+  transform: scale(0.8);
 }
 .form .user-data {
   position: relative;
