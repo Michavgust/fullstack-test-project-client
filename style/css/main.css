@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -8,30 +9,6 @@ body {
   background-color: #F2F2F2;
 }
 
-@media screen and (min-width: 1280px) {
-  .header {
-    width: 100%;
-    height: 645px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header {
-    padding: 120px 64px 120px 64px;
-    height: 465px;
-  }
-  .main {
-    padding: 120px 64px 120px 64px;
-  }
-}
-@media screen and (min-width: 320px) {
-  .header {
-    padding: 16px 48px 16px 48px;
-    height: 300px;
-  }
-  .main {
-    padding: 16px 48px 16px 48px;
-  }
-}
 .header {
   position: relative;
   background-color: #FFFFFF;
@@ -86,7 +63,7 @@ body {
   background: url("../../icons/Vector.svg");
 }
 .header .vid .image-container .btn-watch-video:active, .header .vid .image-container .btn-watch-video:hover {
-  background-color: rgba(24, 197, 118, 0.75);
+  background-color: rgb(18, 143, 87);
 }
 .header .vid .image-container .btn-watch-video:hover {
   transform: translate(-50%, -50%) scale(1.1);
@@ -107,19 +84,200 @@ body {
   min-height: 465px;
   overflow: hidden;
 }
+.main .custom-gutter {
+  --bs-gutter-x: 20px;
+  --bs-gutter-y: 20px;
+}
+.main .peas {
+  background: url("../../images/горох.png");
+  background-size: cover;
+  background-position: center;
+}
+.main .blueberry {
+  background: url("../../images/голубика.png");
+  background-size: cover;
+  background-position: center;
+}
+.main .carrot {
+  background: url("../../images/морковь.png");
+  background-size: cover;
+  background-position: center;
+}
 .main .card-big {
-  min-width: 20.5rem;
-  height: 20.5rem;
-  max-width: 24.1875rem;
+  width: 100%;
+  min-height: 37.9vh;
+  height: 100%;
 }
 .main .card-middle {
-  min-width: 20.5rem;
+  width: 100%;
   height: 9.625rem;
-  max-width: 24.1875rem;
 }
 .main .card-small {
-  max-width: 14.375rem;
-  max-height: auto;
+  width: 11.5rem;
+  height: 20.5rem;
+}
+.main .card-small .card-text {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #444444;
+}
+.main .card-big .card-img-overlay,
+.main .card-middle .card-img-overlay {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.main .card-big .card-img-overlay .purchase,
+.main .card-middle .card-img-overlay .purchase {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  width: 208px;
+  height: 32px;
+}
+.main .card-big .card-img-overlay .purchase .price,
+.main .card-middle .card-img-overlay .purchase .price {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.main .card-big .card-img-overlay .card-header,
+.main .card-middle .card-img-overlay .card-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: transparent;
+  padding: 0;
+}
+.main .card-big .card-img-overlay .card-header .card-title,
+.main .card-middle .card-img-overlay .card-header .card-title {
+  text-align: start;
+}
+.main .card-big .card-img-overlay .card-header .card-controls,
+.main .card-middle .card-img-overlay .card-header .card-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.main .card-big .card-img-overlay .card-header .card-controls .favourites,
+.main .card-middle .card-img-overlay .card-header .card-controls .favourites {
+  width: 17px;
+  height: 15px;
+  background: url("../../icons/favourites.svg");
+}
+.main .card-big .card-img-overlay .card-header .card-controls .viewed,
+.main .card-middle .card-img-overlay .card-header .card-controls .viewed {
+  width: 17.9px;
+  height: 11.88px;
+  background: url("../../icons/eye.svg");
+}
+.main .card-big .card-img-overlay .card-header .card-controls .favourites:hover,
+.main .card-big .card-img-overlay .card-header .card-controls .viewed:hover,
+.main .card-middle .card-img-overlay .card-header .card-controls .favourites:hover,
+.main .card-middle .card-img-overlay .card-header .card-controls .viewed:hover {
+  transform: scale(1.05);
+}
+.main .card-big .card-img-overlay .card-header .card-controls .favourites:active,
+.main .card-big .card-img-overlay .card-header .card-controls .viewed:active,
+.main .card-middle .card-img-overlay .card-header .card-controls .favourites:active,
+.main .card-middle .card-img-overlay .card-header .card-controls .viewed:active {
+  transform: scale(0.8);
+}
+.main .card-big .card-img-overlay .card-footer,
+.main .card-middle .card-img-overlay .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  padding: 0;
+  border: transparent;
+}
+.main .card-big .card-img-overlay .info,
+.main .card-middle .card-img-overlay .info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: max-content;
+}
+.main .card-big .card-img-overlay .info .discount,
+.main .card-middle .card-img-overlay .info .discount {
+  width: 56px;
+  height: 23px;
+  border-radius: 50px;
+}
+.main .card-big .card-img-overlay .info .product-day,
+.main .card-middle .card-img-overlay .info .product-day {
+  width: 83px;
+  height: 23px;
+  border-radius: 50px;
+  background: #FFA726;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+.main .btn-card {
+  width: 142px;
+  height: 32px;
+  background-color: rgb(24, 197, 118);
+  border-color: rgb(24, 197, 118);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+}
+.main .btn-card:hover {
+  background-color: rgb(21, 167, 101);
+  border-color: rgb(21, 167, 101);
+}
+.main .btn-card::after {
+  background-color: rgb(18, 143, 87);
+  border-color: rgb(18, 143, 87);
+}
+
+@media screen and (min-width: 320px) {
+  .header {
+    padding: 16px 48px 16px 48px;
+    height: 300px;
+  }
+  .main {
+    padding: 16px 48px 16px 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 64px 120px 64px 120px;
+    height: 465px;
+  }
+  .main {
+    padding: 64px 120px 64px 120px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    width: 100%;
+    height: 645px;
+    padding: 64px 120px 64px 120px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

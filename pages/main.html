@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/client/style/css/main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,51 +28,118 @@
                 </div>
             </div>
         </header>
+
         <main class="main">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-sm-3 g-4">
-                    <div class="card card-big text-bg-dark">
-                        <img src="/client/images/горох.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                          <h5 class="card-title">Заголовок карточки</h5>
-                          <button class="btn btn-primary">Кнопка</button>
+            <div class="container-fluid">
+                <div class="row custom-gutter row-cols-1 row-cols-lg-2 row-cols-xl-3 justify-content-center">
+
+                  <div class="col-xl-4 col-md-6 col-xs-12 order-xs-1">
+                    <div class="card card-big text-bg-dark peas">
+                      <!-- <img src="/client/images/горох.png" class="card-img" alt="..."> -->
+                      <div class="card-img-overlay">
+                        <div class="card-header">
+                          <h5 class="card-title">Горох в стручках, 1 кг</h5>
+                          <div class="card-controls">
+                            <div class="favourites"></div>
+                            <div class="viewed"></div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="card card-middle text-bg-dark">
-                        <img src="/client/images/голубика.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                          <h5 class="card-title">Заголовок карточки</h5>
-                          <button class="btn btn-primary">Кнопка</button>
-                        </div>
-                    </div>
-                    <div class="card card-middle text-bg-dark">
-                        <img src="/client/images/морковь.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                          <h5 class="card-title">Заголовок карточки</h5>
-                          <button class="btn btn-primary">Кнопка</button>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                      <div class="card card-small">
-                        <img src="/client/images/попкорн.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Заголовок карточки</h5>
-                          <p class="card-text">Это более длинная карта С вспомогательным текстом </p>
-                          <button class="btn btn-primary">Кнопка</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm">
-                      <div class="card card-small">
-                        <img src="/client/images/эскимо.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Заголовок карточки</h5>
-                          <p class="card-text">Это более длинная карта С вспомогательным текстом </p>
-                          <button class="btn btn-primary">Кнопка</button>
-                        </div>
+                          <div class="card-footer">
+                            <div class="info">
+                              <div class="discount">-29%</div>
+                              <div class="product-day">Товар дня</div>
+                            </div>
+                            <div class="purchase">
+                              <p class="price">570 ₽</p>
+                              <button class="btn btn-primary btn-card">Оставить заявку</button>
+                            </div>
+                          </div>
                       </div>
                     </div>
                   </div>
+
+                  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 order-xl-2 order-md-3">
+                    <div class="row custom-gutter">
+
+                      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-12">
+                        <div class="card card-middle text-bg-dark blueberry">
+                          <!-- <img src="/client/images/голубика.png" class="card-img" alt="..."> -->
+                          <div class="card-img-overlay">
+                            <div class="card-header">
+                              <h5 class="card-title">Голубика лесная, 200 г</h5>
+                              <div class="card-controls">
+                                <div class="favourites"></div>
+                                <div class="viewed"></div>
+                              </div>
+                            </div>
+                            <div class="card-footer">
+                              <div class="info">
+                                <div class="discount">- 29%</div>
+                                <div class="product-day">Товар дня</div>
+                              </div>
+                              <div class="purchase">
+                                <p class="price">140 ₽</p>
+                                <button class="btn btn-primary btn-card">Оставить заявку</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-12">
+                        <div class="card card-middle text-bg-dark carrot">
+                            <!-- <img src="/client/images/морковь.png" class="card-img" alt="..."> -->
+                            <div class="card-img-overlay">
+                              <div class="card-header">
+                                <h5 class="card-title">Морковь мытая, 1 кг</h5>
+                                <div class="card-controls">
+                                  <div class="favourites"></div>
+                                  <div class="viewed"></div>
+                                </div>
+                              </div>
+                              <div class="card-footer">
+                                <div class="info">
+                                  <div class="hit">Хит</div>
+                                </div>
+                                <div class="purchase">
+                                  <p class="price">140 ₽</p>
+                                  <button class="btn btn-primary btn-card">Оставить заявку</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-xl-4 col-md-6 col-sm-12 order-xl-3 order-lg-2">
+                    <div class="row custom-gutter flex-nowrap overflow-auto">
+
+                      <div class="col-sm">
+                        <div class="card card-small">
+                          <img src="/client/images/попкорн.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">Попкорн солёный,для СВЧ-печи, 120 г </p>
+                            <button class="btn btn-primary btn-card">Оставить заявку</button>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="col-sm">
+                        <div class="card card-small">
+                          <img src="/client/images/эскимо.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">Эскимо с малиной, 150 г</p>
+                            <button class="btn btn-primary btn-card">Оставить заявку</button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
             </div>
         </main>
         <!-- <footer class="footer"></footer> -->
