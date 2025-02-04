@@ -108,15 +108,114 @@ body {
   min-height: 37.9vh;
   height: 100%;
 }
+.main .card-big .discount {
+  background: #18C576;
+}
 .main .card-middle {
   width: 100%;
   height: 9.625rem;
+}
+.main .card-middle .discount {
+  background: #FF5BC6;
 }
 .main .card-small {
   width: 11.5rem;
   height: 20.5rem;
 }
-.main .card-small .card-text {
+.main .card-small .card-header {
+  width: 100%;
+  height: 60%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .card-small .card-header .info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: max-content;
+}
+.main .card-small .card-header .info .discount {
+  width: 56px;
+  height: 23px;
+  border-radius: 50px;
+  background-color: #18C576;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 23px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+.main .card-small .card-header .info .product-day {
+  width: 83px;
+  height: 23px;
+  border-radius: 50px;
+  background: #FFA726;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+.main .card-small .card-header .info .hit {
+  width: 44px;
+  height: 23px;
+  border-radius: 50px;
+  background: #AC59F1;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+.main .card-small .card-header .card-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.main .card-small .card-header .card-controls .favourites {
+  width: 17px;
+  height: 15px;
+  background: url("../../icons/favourites.svg");
+}
+.main .card-small .card-header .card-controls .viewed {
+  width: 17.9px;
+  height: 11.88px;
+  background: url("../../icons/eye.svg");
+}
+.main .card-small .card-header .card-controls .favourites:hover,
+.main .card-small .card-header .card-controls .viewed:hover {
+  transform: scale(1.05);
+}
+.main .card-small .card-header .card-controls .favourites:active,
+.main .card-small .card-header .card-controls .viewed:active {
+  transform: scale(0.8);
+}
+.main .card-small .popcorn {
+  background: url("../../images/попкорн.png");
+  background-size: cover;
+  background-position: center;
+}
+.main .card-small .popsicle {
+  background: url("../../images/эскимо.png");
+  background-size: cover;
+  background-position: center;
+}
+.main .card-small .card-body {
+  height: 40%;
+  padding: 12px;
+  align-content: space-between;
+}
+.main .card-small .card-body .card-text {
   font-family: Inter;
   font-size: 14px;
   font-weight: 600;
@@ -125,6 +224,26 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #444444;
+}
+.main .card-small .card-body .card-small-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.main .card-small .card-body .card-small-footer .price {
+  width: 100%;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.main .card-small .card-body .card-small-footer .btn-card {
+  width: 160px;
+  height: 32px;
 }
 .main .card-big .card-img-overlay,
 .main .card-middle .card-img-overlay {
@@ -137,9 +256,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 8px;
   width: 208px;
-  height: 32px;
 }
 .main .card-big .card-img-overlay .purchase .price,
 .main .card-middle .card-img-overlay .purchase .price {
@@ -215,6 +334,14 @@ body {
   width: 56px;
   height: 23px;
   border-radius: 50px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 23px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
 }
 .main .card-big .card-img-overlay .info .product-day,
 .main .card-middle .card-img-overlay .info .product-day {
@@ -231,9 +358,26 @@ body {
   text-decoration-skip-ink: none;
   color: #FFFFFF;
 }
-.main .btn-card {
+.main .card-big .card-img-overlay .info .hit,
+.main .card-middle .card-img-overlay .info .hit {
+  width: 44px;
+  height: 23px;
+  border-radius: 50px;
+  background: #AC59F1;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.main .card-big .card-img-overlay .btn-card,
+.main .card-middle .card-img-overlay .btn-card {
   width: 142px;
   height: 32px;
+}
+.main .btn-card {
   background-color: rgb(24, 197, 118);
   border-color: rgb(24, 197, 118);
   font-family: Inter;
