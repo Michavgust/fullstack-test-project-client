@@ -1,5 +1,9 @@
-document.querySelector('.btn-watch-video').addEventListener('click', function() {
-    document.querySelector('.image-container').style.display = 'none';
+import '../pages/main.html';
+// import '../style/scss/main.scss';
+import '../style/scss/styles.scss'
+
+document.querySelector('.header__button').addEventListener('click', function() {
+    document.querySelector('.header__image').style.display = 'none';
     let video = document.getElementById('video');
     video.style.display = 'block';
     video.play();

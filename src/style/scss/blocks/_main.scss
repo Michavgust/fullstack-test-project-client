@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: var(--section-padding-y);
+
+  background-color: var(--color-light-grey);
+  color: var(--color-light);
+
+  &__grid {
+    width: 100%;
+    //justify-content: space-between;
+    //
+    //@include tablet {
+    //  display: flex;
+    //  justify-content: space-between;
+    //  flex-wrap: wrap;
+    //  gap: 20px
+    //}
+  }
+}

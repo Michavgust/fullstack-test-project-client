@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body class="body">
+        <form class="form" action="form.html" method="post">
+        <div class="form__header">
+            <h1 class="form__header-title">Оставьте заявку</h1>
+            <!-- <img src="/client/icons/x.png" alt=""> -->
+            <div class="form__header-close">
+                <a href="../index.html" style="width: 100%; height: 100%"></a>
+            </div>
+        </div>
+
+        <div class="form__data">
+            <div class="form__field">
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя *" required>
+                <span class="form__error">Поле не заполнено</span>
+            </div>
+
+            <div class="form__field">
+                <input
+                    class="form__input"
+                    type="tel"
+                    name="phone"
+                    placeholder="Номер телефона *"
+                    pattern="\+7[0-9]{10}"
+                    required
+                >
+                <span class="form__error">Поле не заполнено</span>
+            </div>
+        </div>
+
+        <div class="form__footer">
+            <label class="form__footer-check">
+                <input class="form__footer-checkbox" type="checkbox" name="personal_data" required>
+                <span>Я согласен на обработку персональных данных</span>
+            </label>
+            <input class="button button-submit form__footer-submit" disabled type="submit" value="Отправить">
+        </div>
+
+    </form>
+    </body>
+</html>

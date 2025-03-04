@@ -1,0 +1,35 @@
+.button {
+  @include reset-button;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  background: var(--color-green);
+  color: var(--color-light);
+  cursor: pointer;
+
+  &-main {
+    @include fluid-text(12, 10);
+
+    min-width: 142px;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+
+    a {
+      width: 100%;
+    }
+  }
+
+  &-submit {
+    width: 106px;
+    border-radius: var(--border-radius);
+
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  &:active:not(:disabled),
+  &:hover:not(:disabled) {
+    background-color: var(--color-green-alt);
+  }
+}

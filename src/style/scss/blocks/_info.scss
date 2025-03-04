@@ -1,0 +1,46 @@
+.info {
+  @include fluid-text(12, 10);
+
+  //font-size: 12px;
+  font-weight: 600;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    @include mobile {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    height: 23px;
+    padding-inline: 11px;
+    border-radius: var(--border-radius-large);
+
+    &-discount {
+      background-color: var(--color-green);
+
+      &-alt {
+        background-color: var(--color-ping);
+      }
+    }
+
+    &-article {
+      background-color: var(--color-orange);
+    }
+
+    &-sale {
+      background-color: var(--color-light-blue);
+    }
+
+    &-hit {
+      background-color: var(--color-purple);
+    }
+  }
+}
