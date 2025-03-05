@@ -1,0 +1,21 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  column-gap: 4px;
+
+  &__item {
+    @include flex-center;
+    @include square(19px);
+
+    @include hover {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+
+    &:active {
+      transform: scale(0.9);
+      color: var(--color-red);
+      opacity: 1;
+    }
+  }
+}

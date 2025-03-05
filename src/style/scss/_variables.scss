@@ -1,0 +1,46 @@
+:root {
+  --color-dark: #444444;
+  --color-dark-alt: #1E1E1E;
+  --color-light: #FFFFFF;
+  --color-light-grey: #F2F2F2;
+  --color-light-form-button: #FEFEFE;
+  --color-red: #E44B4B;
+  --color-ping: #FF5BC6;
+  --color-purple: #AC59F1;
+  --color-orange: #FFA726;
+  --color-green: #18C576;
+  --color-green-alt: #108650FF;
+  --color-light-blue: #39B0F4;
+  --color-grey: #00000040;
+  --color-grey-form-checkbox: #D1D1D1;
+  --color-grey-form-field: #E6E6E6;
+
+  // --border: 1px solid var(--color-dark);
+  --border-form-field: 1px solid var(--color-grey-form-field);
+  --border-radius: 5px;
+  --border-radius-small: 2px;
+  --border-radius-large: 50px;
+
+  --font-family-base: 'Inter';
+
+  --container-width: 1240px;
+  --container-padding-x: 120px;
+  --grid-gap: 20px;
+
+  --section-padding-y: 64px;
+
+  --input-height: 34px;
+  --button-height: 32px;
+
+  --transition-duration: 0.2s;
+
+  // @include desktop {
+  //   --section-padding-y: 50px;
+  // }
+
+  @include mobile {
+    --container-padding-x: 16px;
+    --section-padding-y: 48px;
+    --grid-gap: 16px
+  }
+}

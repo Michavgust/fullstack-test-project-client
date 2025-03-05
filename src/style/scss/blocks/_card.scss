@@ -1,0 +1,230 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--border-radius);
+
+  @include tablet-s {
+    justify-content: space-between;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    &-title {
+      @include fluid-text(20, 18);
+
+      @include mobile-s {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    @include tablet-s {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+  }
+
+  &__info {
+    align-self: start;
+  }
+
+  &__purchase {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    @include tablet-s {
+      width: 100%;
+    }
+
+    .purchase__button {
+      width: 100%;
+    }
+  }
+
+  --cardBigWidthMax: 387px;
+  --cardBigHightMax: 328px;
+  --cardBigWidthMin: 328px;
+  --cardBigHightMin: 328px;
+
+  --cardMiddleWidthMax: 387px;
+  --cardMiddleHightMax: 154px;
+  --cardMiddleWidthMin: 328px;
+  --cardMiddleHightMin: 175px;
+
+  --cardSmallWidthMax: 230px;
+  --cardSmallHightMax: 410px;
+  --cardSmallWidthMin: 181px;
+  --cardSmallHightMin: 328px;
+
+  @include tablet {
+    --cardBigWidthMax: 382px;
+    --cardMiddleWidthMax: 382px;
+  }
+
+  &-big {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+
+    @include tablet {
+      max-height: var(--cardBigHightMax);
+      max-width:  var(--cardBigWidthMax);
+      min-height: 0;
+      min-width:  0;
+    }
+
+    @include mobile-s {
+      width: 100%;
+      height: 328px;
+      max-width: 100%;
+    }
+  }
+
+  &-middle {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+
+    @include desktop {
+      min-height: var(--cardMiddleHightMin);
+      min-width:  var(--cardMiddleWidthMin);
+    }
+
+    @include tablet {
+      min-width: 0;
+      //min-height: 0;
+    }
+  }
+
+  &-small {
+    width: 100%;
+    min-width:  var(--cardSmallWidthMin);
+    aspect-ratio: 1 / 1.8;
+
+    @include tablet {
+      min-width: 0;
+      max-width: var(--cardSmallWidthMin);
+    }
+
+    @include mobile-s {
+      width: var(--cardSmallWidthMax);
+      height: var(--cardSmallHightMax);
+      max-width: var(--cardSmallWidthMax);
+      scroll-snap-align: center;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      width: 100%;
+      height: 56%;
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+
+      padding: 12px;
+
+      .info__list {
+        flex-direction: column;
+      }
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 46%;
+      padding: 12px;
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+      background-color: var(--color-light);
+
+      font-weight: 600;
+      color: var(--color-dark);
+    }
+
+    &__text {
+      @include fluid-text(14, 8);
+
+      width: 100%;
+      text-align: left;
+
+      @include mobile-s {
+        font-size: 18px;
+      }
+    }
+
+    &__purchase {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+
+      .purchase__price {
+        width: 100%;
+
+        @include fluid-text(20, 14);
+        text-align: center;
+
+        @include mobile-s {
+          font-size: 25px;
+        }
+      }
+    }
+
+    &__button {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+  
+  &-peas {
+    background-image: url('../../../src/images/горох.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  &-carrot {
+    background-image: url('../../../src/images/морковь.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  &-blueberry {
+    background-image: url('../../../src/images/голубика.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  &-popcorn {
+    background-image: url('../../../src/images/попкорн.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  &-popsicle {
+    background-image: url('../../../src/images/эскимо.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.purchase {
+  font-size: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+
+  @include tablet-s {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+}
